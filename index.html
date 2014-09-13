@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Sportsbook-json-php : Example code to work with the Sportsbook Software JSON API using PHP.">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Sportsbook-json-php</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/sportsbook-software/sportsbook-json-php">View on GitHub</a>
+
+          <h1 id="project_title">Sportsbook-json-php</h1>
+          <h2 id="project_tagline">Example code to work with the Sportsbook Software JSON API using PHP.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/sportsbook-software/sportsbook-json-php/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/sportsbook-software/sportsbook-json-php/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="sportsbook-json-php" class="anchor" href="#sportsbook-json-php"><span class="octicon octicon-link"></span></a>sportsbook-json-php</h1>
+
+<p>Example code to work with the Sportsbook Software JSON API using PHP.</p>
+
+<h1>
+<a name="information" class="anchor" href="#information"><span class="octicon octicon-link"></span></a>Information</h1>
+
+<p>Every sportsbook user account may be used to submit API calls to our API. Using this API you can query for sportsbook transaction history, bets, winnings, casino game plays, account information, poker history, deposits and more.</p>
+
+<p>It is also possible to browse sportsbook market data in JSON or XML format. You can query for sports, leagues, events, bets and bet types. When sending queries, you can also specify filters such as :</p>
+
+<p>sport = 1</p>
+
+<p>To drill down through data or find specific records to monitor for updates, such as for instance the case with sportsbook bets, where prices might change several times per minute on occasion.</p>
+
+<p>The filters*.php files show practical examples to browse through market data and interpret resulting JSON structure. </p>
+
+<h1>
+<a name="notice" class="anchor" href="#notice"><span class="octicon octicon-link"></span></a>Notice</h1>
+
+<p>API access is free for all but may be throttled in case of high traffic. Sportsbook market data API functions (sport, league, event, prop) are subject to limits and quotas and require a data subscription. 
+Please contact sales to sign up for an one week integration trial and choose a subscription plan. To learn more about our <a href="http://www.sportsbooksoft.com">sportsbook software</a> data subscription plans please visit this page:</p>
+
+<p><a href="http://www.sportsbooksoftware.com/sportsbook-market-feeds/">http://www.sportsbooksoftware.com/sportsbook-market-feeds/</a></p>
+
+<h1>
+<a name="api-notes" class="anchor" href="#api-notes"><span class="octicon octicon-link"></span></a>API notes</h1>
+
+<p>This is a proof of concept demonstration of the v2 JSON API by Entertastic that introduces the concept of dynamic faceted search. You can use the sandbox below to submit JSON requests to the local installation or (simple GET) remote requests via cross-domain JSONP requests against the Betvolt.com database.</p>
+
+<p>If however you do have a solid reason to program on the server side, you can consume all these services on the server side as well. Any programming language has JSON and data serialization support.</p>
+
+<p>Private services: When consuming private services always include the headers returned by the login service. The API operates based on regular user sessions as managed by the front-end, this means that once an user is logged in to the website the private calls become accessible along with the rest of the visual front-end.</p>
+
+<p>At this time all queries are limited to 100 results and ordered by ID descending in order to return the latest results. Conditions should be used to step through blocks of 1000 records per service call.</p>
+
+<p>At this time the API provides only read-only services. The final version of the API (along with write privileges on bets, users and transactions) is due to replace the current separate market browser and account APIs by the end of December 2014.</p>
+
+<p>When testing JSON calls you have to use an user account created under the current domain name. JSONP calls will work accross domains however you must make sure the JSONP call contains an authentication hash for an user belonging to the domain name you're sending the request to.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Sportsbook-json-php maintained by <a href="https://github.com/sportsbook-software">sportsbook-software</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
